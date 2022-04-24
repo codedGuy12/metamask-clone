@@ -1,0 +1,165 @@
+.container {
+  width: 100%;
+  min-height: 100%;
+  //   border: 1px solid white;
+  .formContainer {
+    border: 3px solid var(--secondary);
+    padding-bottom: 30px;
+    width: 100%;
+    min-height: 100%;
+    // border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .formContent {
+      width: 80%;
+      min-height: 80%;
+      //   border-bottom: var(--buttonColor);
+
+      .header {
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 3px solid var(--secondary);
+        margin-bottom: 30px;
+        .icon {
+          //   border: 2px solid red;
+          font-size: 40px;
+          font-weight: bolder;
+        }
+        .headerLogo {
+          text-align: center;
+          width: 50px;
+          height: 50px;
+          //   border: 1px solid red;
+          background-image: url("../../../assets/metamaskLogo.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+
+      .logoContainer {
+        margin-top: 30px;
+        // border-top: 1px solid var(--white);
+        //   padding-top:20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 100%;
+        margin-bottom: 30px;
+        // border: 3px solid blue;
+
+        .blockChainLogo {
+          text-align: center;
+          width: 150px;
+          height: 150px;
+          //   border: 1px solid red;
+          background-image: url("../../../assets/metamaskLogo.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+
+      form {
+        .textContainer {
+          //   border: 3px solid;
+          margin-bottom: 30px;
+          span {
+            font-size: 16px;
+            &:nth-child(1) {
+              font-size: 30px;
+              font-weight: bolder;
+            }
+          }
+        }
+        .formGroup {
+          font-size: 16px;
+          margin-bottom: 10px;
+          label {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 20px;
+            font-weight: bolder;
+          }
+          textarea {
+            outline: none;
+            padding: 8px 10px;
+            width: 100%;
+          }
+        }
+        button {
+          width: 100%;
+          height: 50px;
+          padding: 8px 10px;
+          font-size: 20px;
+          color: var(--white);
+          border-radius: 10px;
+          background-color: var(--buttonColor);
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+.lightMode {
+  color: var(--dark);
+  .formContainer {
+    border: none;
+    .formContent {
+      .header {
+        border-bottom: 1px solid var(--dark);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .container {
+    .formContainer {
+      .formContent {
+        width: 95%;
+        .header {
+          .icon {
+            //   border: 2px solid red;
+            font-size: 30px;
+            font-weight: bold;
+          }
+          .headerLogo {
+            width: 30px;
+            height: 30px;
+          }
+        }
+        .logoContainer {
+          margin-bottom: 10px;
+          //   border: 3px solid red;
+          .blockChainLogo {
+            width: 70px;
+            height: 70px;
+          }
+        }
+        form {
+          .textContainer {
+            margin-bottom: 20px;
+            span {
+              font-size: 14px;
+              &:nth-child(1) {
+                font-size: 20px;
+                font-weight: bolder;
+              }
+            }
+          }
+          .formGroup {
+            // border: 3px solid red;
+            label {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

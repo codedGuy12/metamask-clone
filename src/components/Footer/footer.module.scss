@@ -1,0 +1,145 @@
+.footerContainer {
+//   border: 3px solid red;
+  padding: 80px 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .footerContent {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    .footerLogo {
+      //   border: 3px solid red;
+      margin-bottom: 70px;
+      width: 400px;
+      height: 50px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      // border: 3px solid red;
+      .logoItem {
+        // border: 2px solid purple;
+        background-image: url("../../assets/metamaskLogo.png");
+        width: 20%;
+        height: 80%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        // border: 2px solid blue;
+      }
+      .logoText {
+        // border: 2px solid blue;
+        width: 35%;
+        font-size: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: var(--white);
+        font-weight: bolder;
+      }
+    }
+    .footerGallery {
+      color: var(--white);
+      //   border: 3px solid red;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 30px 80px;
+      margin-bottom: 50px;
+      span {
+        h2 {
+          color: var(--secondary);
+        }
+      }
+      div {
+        // &:nth-child(1) {
+        //   border: 3px solid blue;
+        ul {
+          // border: 3px solid blue;
+          list-style: none;
+          li {
+            margin: 20px 0;
+            font-weight: bold;
+          }
+        }
+        // }
+      }
+    }
+    .footerCopyright {
+      //   border: 3px solid red;
+      color: var(--white);
+      font-weight: bold;
+    }
+  }
+}
+.lightMode {
+  .footerContent {
+    .footerLogo {
+      .logoText {
+        // border: 3px solid blue;
+        color: var(--footerText2);
+      }
+    }
+    .footerGallery {
+      color: var(--footerText2);
+    }
+    .footerCopyright {
+        color: var(--footerText2);
+      }
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .footerContainer {
+    .footerContent {
+    //   .footerLogo {
+    //     // border: 3px solid blue;
+    //   }
+      .footerGallery {
+        // border: 3px solid purple;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        span {
+          h2 {
+            color: var(--secondary);
+            font-size: 18px;
+          }
+        }
+
+        div {
+          ul {
+            li {
+              margin: 20px 0;
+              font-weight: bold;
+              font-size: 14px;
+            }
+          }
+          // }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footerContainer {
+    .footerContent {
+      .footerLogo {
+        //   border: 3px solid yellowgreen;
+        width: 300px;
+        .logoItem {
+          //   border: 3px solid blue;
+          margin-right: 8px;
+        }
+        .logoText {
+          font-size: 20px;
+          //   border: 3px solid red;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,279 @@
+.navbarParentDiv {
+  background-color: var(--dark);
+  min-height: 120px;
+  //   border: 3px solid red;
+  padding: 10px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  position: fixed;
+  flex-direction: column;
+  //   border: 3px solid blue;
+
+  .horizontalBar {
+    // border: 3px solid blue;
+    // position: fixed;
+    z-index: 3;
+    // border: 2px solid red;
+    // height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    // flex-direction: column;
+
+    .horizontalBarContent {
+      // border: 3px solid green;
+      height: inherit;
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .logoContainer {
+        //   border: 2px solid red;
+        width: 350px;
+        height: 70%;
+        display: flex;
+        align-items: center;
+
+        .logoItem {
+          background-image: url("../../assets/metamaskLogo.png");
+          width: 20%;
+          height: 100%;
+          background-repeat: no-repeat;
+          background-size: contain;
+          // border: 2px solid blue;
+        }
+        .logoText {
+          // border: 2px solid blue;
+          width: 70%;
+          font-size: 35px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          color: var(--white);
+          font-weight: bolder;
+        }
+      }
+      .listContent {
+        // border: 2px solid red;
+        width: 300px;
+        display: flex;
+        //   justify-content: center;
+        justify-content: flex-end;
+        align-items: center;
+        .listItems {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: inherit;
+          height: inherit;
+          button {
+            display: inline-block;
+            padding: 10px 35px;
+
+            background: var(--buttonColor);
+            color: var(--white);
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            border-radius: 999px;
+            font-size: 16px;
+            line-height: 1.3;
+            margin-right: 30px;
+            // &:nth-child(2) {
+            //   margin-left: 30px;
+            // }
+          }
+        }
+        .navIconsContainer {
+          .navIcons {
+            // border: 3px solid blue;
+            display: none;
+            justify-content: flex-end;
+            align-items: center;
+            font-size: 40px;
+          }
+        }
+      }
+    }
+  }
+  .dropDownContent {
+    //   border: 5px solid red;
+    width: 100%;
+    margin-top: 10px;
+    max-height: 0;
+    // border: 2px solid red;
+    // transition: [property] [duration] [timing-function] [delay];
+    transition: all 0.8s ease-in-out;
+    color: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .listContentDropdown {
+      width: 100%;
+      //   border: 3px solid blue;
+      .listItemsDropdown {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        button {
+          width: 100%;
+          display: inline-block;
+          padding: 10px 35px;
+
+          background: var(--buttonColor);
+          color: var(--white);
+          border: none;
+          cursor: pointer;
+          text-align: center;
+          border-radius: 999px;
+          font-size: 16px;
+          line-height: 1.3;
+        }
+        .toggleSwitch {
+          width: 100%;
+          margin-top: 20px;
+          padding-right: 50px;
+          //   border: 3px solid red;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+  .active {
+    display: flex;
+    max-height: 100vh;
+    transition: all 2s ease-in-out;
+  }
+}
+.lightMode {
+  background-color: var(--white);
+  .horizontalBar {
+    .horizontalBarContent {
+      .logoContainer {
+        .logoText {
+          color: var(--dark);
+        }
+      }
+      .listContent {
+        .navIconsContainer {
+          .navIcons {
+            color: var(--dark);
+            // border: 3px solid green;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .navbarParentDiv {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .horizontalBar {
+      //   border: 3px solid purple;
+      .horizontalBarContent {
+        .logoContainer {
+          .logoText {
+            width: 70%;
+            font-size: 20px;
+            letter-spacing: 1.5px;
+          }
+        }
+        .listContent {
+          .listItems {
+            display: none;
+          }
+
+          .navIconsContainer {
+            .navIcons {
+              display: flex;
+              color: var(--white);
+              font-size: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .lightMode {
+    .horizontalBar {
+      .horizontalBarContent {
+        .logoContainer {
+          .logoText {
+          }
+        }
+        .listContent {
+          .navIconsContainer {
+            .navIcons {
+              color: var(--dark);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbarParentDiv {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .horizontalBar {
+        .horizontalBarContent {
+        //   border: 3px solid red;
+          width: 90%;
+        .logoContainer {
+          .logoText {
+            width: 70%;
+            font-size: 20px;
+            letter-spacing: 1.5px;
+          }
+        }
+        .listContent {
+          .listItems {
+            display: none;
+          }
+
+          .navIconsContainer {
+            .navIcons {
+              display: flex;
+              color: var(--white);
+              font-size: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .lightMode {
+    .horizontalBar {
+      .horizontalBarContent {
+        .logoContainer {
+          .logoText {
+          }
+        }
+        .listContent {
+          .navIconsContainer {
+            .navIcons {
+              color: var(--dark);
+            }
+          }
+        }
+      }
+    }
+  }
+}

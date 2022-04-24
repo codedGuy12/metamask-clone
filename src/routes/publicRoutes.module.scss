@@ -1,0 +1,10 @@
+.componentAside {
+  position: relative;
+  min-height: calc(100vh - 80px);
+  margin-left: 0;
+  transition: 0.7s;
+  // border: 3px solid red;
+}
+.active {
+  margin-left: 250px;
+}

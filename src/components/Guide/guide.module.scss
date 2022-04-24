@@ -1,0 +1,229 @@
+.appContainer {
+  //   border: 2px solid red;
+  min-height: 50vh;
+  width: 100%;
+  display: grid;
+  color: var(--white);
+  place-items: center;
+  .guideContent {
+    // border: 2px solid red;
+    width: 80%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    .guideLine {
+      width: 60%;
+      min-height: 100px;
+      //   border: 2px solid red;
+      header {
+        font-size: 20px;
+        margin-bottom: 30px;
+        font-weight: bolder;
+        // border: 2px solid gold;
+        h2 {
+          font-size: 38px;
+          color: var(--secondary);
+          font-weight: bolder;
+          padding-bottom: 20px;
+        }
+      }
+
+      .bodyContainer {
+        // border: 3px solid green;
+        padding-top: 30px;
+        div {
+          ul {
+            list-style: none;
+            li {
+              display: flex;
+              align-self: center;
+              margin-bottom: 15px;
+              // border:3px solid red;
+              span {
+                color: var(--white);
+                font-size: 23px;
+                margin-right: 20px;
+                // border: 3px solid red;
+              }
+            }
+          }
+          &:nth-child(1) {
+            // border: 2px solid red;
+            margin-bottom: 30px;
+            h2 {
+              font-size: 22px;
+              color: var(--secondary);
+              font-weight: bolder;
+              padding-bottom: 20px;
+            }
+          }
+          &:nth-child(2) {
+            // border: 2px solid red;
+            h2 {
+              font-size: 22px;
+              color: var(--secondary);
+              font-weight: bolder;
+              padding-bottom: 20px;
+            }
+          }
+        }
+      }
+    }
+    .guidePicture {
+      width: 40%;
+      display: flex;
+      padding-top: 150px;
+
+      .Picture {
+        background-image: url("../../assets/gift.png");
+        height: 400px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+}
+
+.lightMode {
+  color: var(--dark);
+  font-weight: bolder;
+  .guideContent {
+    .guideLine {
+      color: var(--dark);
+      font-weight: bolder;
+      header {
+        color: var(--dark);
+        font-weight: bolder;
+      }
+      .bodyContainer {
+        color: var(--dark);
+        font-weight: bolder;
+        div {
+          ul {
+            li {
+              color: var(--dark);
+              font-weight: bolder;
+              span {
+                color: var(--dark);
+                font-weight: bolder;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .appContainer {
+    .guideContent {
+      //   border: 2px solid red;
+      display: flex;
+      flex-direction: column-reverse;
+      width: 100%;
+      .guideLine {
+        width: 100%;
+        // border: 2px solid blue;
+        //    text-align: center;
+        header {
+          font-size: 16px;
+          h2 {
+            font-size: 28px;
+          }
+        }
+        .bodyContainer {
+            div {
+              ul {
+                font-size: 14px;
+  
+                li {
+                  span {
+                    font-size: 18px;
+                    //   border: 2px solid red;
+                  }
+                }
+              }
+  
+              &:nth-child(1) {
+                h2 {
+                  font-size: 16px;
+                }
+              }
+              &:nth-child(2) {
+                h2 {
+                  font-size: 16px;
+                }
+              }
+              //   border: 2px solid red;
+            }
+          }
+      }
+      .guidePicture {
+        width: 90%;
+        display: flex;
+        padding-top: 0px;
+        .Picture {
+          height: 500px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:500px) {
+  .appContainer {
+    .guideContent {
+      //   border: 2px solid red;
+      display: flex;
+      flex-direction: column-reverse;
+      width: 100%;
+      .guideLine {
+        width: 100%;
+        // border: 2px solid blue;
+        //    text-align: center;
+        header {
+          font-size: 16px;
+          h2 {
+            font-size: 22px;
+          }
+        }
+        .bodyContainer {
+          div {
+            ul {
+              font-size: 14px;
+
+              li {
+                span {
+                  font-size: 18px;
+                  //   border: 2px solid red;
+                }
+              }
+            }
+
+            &:nth-child(1) {
+              h2 {
+                font-size: 16px;
+              }
+            }
+            &:nth-child(2) {
+              h2 {
+                font-size: 16px;
+              }
+            }
+            //   border: 2px solid red;
+          }
+        }
+        .guidePicture {
+          width: 90%;
+          display: flex;
+          padding-top: 0px;
+          .Picture {
+            height: 400px;
+          }
+        }
+      }
+    }
+  }
+}
