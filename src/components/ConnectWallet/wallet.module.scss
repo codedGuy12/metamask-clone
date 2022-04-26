@@ -38,17 +38,42 @@
   color: var(--dark);
 }
 
+@media screen and (max-width: 850px) {
+  .container {
+    // border: 3px solid red;
+    .walletContent {
+      width: 100%;
+      .contentParent {
+        h3 {
+          font-size: 18px;
+        }
+        button {
+          width: 90%;
+          height: 50px;
+          font-weight: bold;
+          font-size: 16px;
+          //   border: 3px solid red;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 520px) {
   .container {
     // border: 3px solid red;
     .walletContent {
       width: 100%;
       .contentParent {
+        h3 {
+          font-size: 14px;
+        }
         button {
           width: 90%;
-          height: 50px;
-          font-weight: bolder;
-        //   border: 3px solid red;
+          height: 40px;
+          font-weight: 300;
+          font-size: 14px;
+          //   border: 3px solid red;
         }
       }
     }

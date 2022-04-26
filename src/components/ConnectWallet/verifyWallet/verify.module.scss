@@ -21,6 +21,7 @@
         text-align: start;
         // display: none;
         Header {
+          // border: 2px solid blue;
           height: 50px;
           color: var(--secondary);
           border-bottom: 2px solid var(--secondary);
@@ -35,9 +36,10 @@
         }
         .formGroup {
           padding-bottom: 60px;
-          //   border: 2px solid blue;
+          // border: 2px solid blue;
           .headerText {
             margin-top: 20px;
+            // border: 2px solid blue;
           }
           label {
             display: block;
@@ -100,6 +102,59 @@
               font-weight: bolder;
               cursor: pointer;
               outline: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    .verifyContainer {
+      width: 95%;
+      margin-bottom: 10px;
+      .formContainer {
+        width: 95%;
+        form {
+          .formGroup {
+            padding-bottom: 0px;
+            // border: 2px solid blue;
+            .headerText {
+              h3 {
+                font-size: 14px;
+                // border: 3px solid red;
+              }
+            }
+            label {
+              font-size: 13px;
+            }
+            input {
+              height: 40px;
+              border-radius: 5px;
+              &::placeholder {
+                font-size: 11px;
+              }
+            }
+            button {
+              height: 40px;
+              font-size: 14px;
+            }
+          }
+        }
+        .walletPopContainer {
+          .walletPopContainer2 {
+            .walletButton {
+              button {
+                // border: 3px solid yellowgreen;
+
+                height: 40px;
+                font-size: 14px;
+                font-weight: 200;
+              }
             }
           }
         }

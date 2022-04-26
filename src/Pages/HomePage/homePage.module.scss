@@ -127,11 +127,13 @@
     min-height: 50vh;
     background-color: var(--dark);
     padding: 70px 0;
+    padding-bottom: 10px;
   }
   .walletContainer {
-    min-height: 10vh;
+    min-height: 200px;
+    // border: 3px solid blue;
     background-color: var(--dark);
-    padding: 70px 0;
+    // padding: 70px 0;
     // border: 3px solid red;
   }
 
@@ -271,6 +273,11 @@
           }
         }
       }
+    }
+    .walletContainer {
+      // border: 3px solid blue;
+      display: flex;
+      align-items: center;
     }
 
     .partnerContainer {
