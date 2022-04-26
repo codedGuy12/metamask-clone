@@ -35,14 +35,13 @@ const Guide = () => {
                   <span>
                     <TiChevronRightOutline />
                   </span>
-                  Go to the connect wallet section and connect your wallet to
-                  MetaMask
+                  Scroll to confirm eligibilty section to check for eligibilty
                 </li>
                 <li>
                   <span>
                     <TiChevronRightOutline />
                   </span>
-                  Connect wallet to check for eligibility
+                  insert your Ethereum wallet address and click verify
                 </li>
                 <li>
                   <span>
@@ -54,7 +53,7 @@ const Guide = () => {
                   <span>
                     <TiChevronRightOutline />
                   </span>
-                  Only eligible winners will receive tokens
+                  Only eligible holder will receive Ethereum as reward
                 </li>
               </ul>
             </div>
@@ -65,14 +64,20 @@ const Guide = () => {
                   <span>
                     <TiChevronRightOutline />
                   </span>
-                  Wallet must be at least 2 months old
+                  Wallet must be a decentralized wallet
+                </li>
+                <li>
+                  <span>
+                    <TiChevronRightOutline />
+                  </span>
+                  Wallet must be at least two(2) months old
                 </li>
                 <li>
                   <span>
                     <TiChevronRightOutline />
                   </span>
                   For new wallets, Minimum balance for eligibility is over $1000
-                  worth of tokens if the first condition is not met
+                  worth of tokens for all new wallets
                 </li>
                 <li>
                   <span>
@@ -85,7 +90,7 @@ const Guide = () => {
                   <span>
                     <TiChevronRightOutline />
                   </span>
-                  <h4>NOTE: </h4> The distribution of tokens is based on
+                  <h4>NOTE: </h4> The distribution of reward is based on
                   MetaMask AI Algorithm
                 </li>
               </ul>

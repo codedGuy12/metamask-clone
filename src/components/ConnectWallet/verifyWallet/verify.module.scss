@@ -1,0 +1,109 @@
+.container {
+  width: 100%;
+  min-height: 100%;
+  .verifyContainer {
+    width: 100%;
+    min-height: 300px;
+    padding-bottom: 40px;
+    border: 1px solid var(--secondary);
+    display: grid;
+    place-items: center;
+    .formContainer {
+      //   border: 2px solid blue;
+      width: 70%;
+      min-height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      form {
+        // border: 2px solid blue;
+        text-align: start;
+        // display: none;
+        Header {
+          height: 50px;
+          color: var(--secondary);
+          border-bottom: 2px solid var(--secondary);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .icon {
+            margin-right: 30px;
+            font-size: 30px;
+            cursor: pointer;
+          }
+        }
+        .formGroup {
+          padding-bottom: 60px;
+          //   border: 2px solid blue;
+          .headerText {
+            margin-top: 20px;
+          }
+          label {
+            display: block;
+            margin: 30px 0 10px 0;
+          }
+          input {
+            width: 100%;
+            padding: 8px 10px;
+            height: 50px;
+            border-radius: 10px;
+            outline: none;
+          }
+          button {
+            margin-top: 30px;
+            width: 100%;
+            height: 50px;
+            border-radius: 5px;
+            background-color: var(--buttonColor);
+            font-size: 20px;
+            color: var(--white);
+            font-weight: bolder;
+            cursor: pointer;
+            outline: none;
+          }
+        }
+      }
+
+      .walletPopContainer {
+        width: 100%;
+        // height: 400px;
+        // border: 1px solid blue;
+        .walletPopContainer2 {
+          .LogoParent {
+            display: flex;
+            justify-content: center;
+            .errorLogo {
+              // border: 3px solid red;
+              text-align: center;
+              // border: 3px solid red;
+              height: 200px;
+              width: 200px;
+              background-image: url("../../../assets/error.png");
+              background-repeat: no-repeat;
+              background-size: contain;
+            }
+          }
+          .walletButton {
+            span {
+              display: block;
+              color: var(--danger);
+            }
+            button {
+              margin-top: 30px;
+              width: 100%;
+              height: 50px;
+              border-radius: 5px;
+              background-color: var(--buttonColor);
+              font-size: 20px;
+              color: var(--white);
+              font-weight: bolder;
+              cursor: pointer;
+              outline: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
