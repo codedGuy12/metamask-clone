@@ -72,6 +72,7 @@
           width: inherit;
           height: inherit;
           button {
+            font-family: Montserrat;
             display: inline-block;
             padding: 10px 35px;
 
@@ -124,6 +125,7 @@
         align-items: center;
         width: 100%;
         button {
+          font-family: Montserrat;
           width: 100%;
           display: inline-block;
           padding: 10px 35px;
@@ -232,9 +234,9 @@
     align-items: center;
     flex-direction: column;
     .horizontalBar {
-        .horizontalBarContent {
+      .horizontalBarContent {
         //   border: 3px solid red;
-          width: 90%;
+        width: 90%;
         .logoContainer {
           .logoText {
             width: 70%;
