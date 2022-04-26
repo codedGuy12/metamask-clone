@@ -13,8 +13,10 @@
     align-items: center;
 
     .formContent {
+      // border: 2px solid red;
       width: 80%;
       min-height: 80%;
+      // display: none;
       //   border-bottom: var(--buttonColor);
 
       .header {
@@ -100,6 +102,27 @@
           background-color: var(--buttonColor);
           outline: none;
         }
+      }
+    }
+    .successMessage {
+      .successLogo {
+        display: flex;
+        justify-content: center;
+        // border: 2px solid red;
+        .LogoItem {
+          text-align: center;
+          // border: 3px solid red;
+          height: 200px;
+          width: 200px;
+          background-image: url("../../../assets/success.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+      .successMessage {
+        padding-top: 20px;
+        color: var(--secondary);
+        font-weight: bolder;
       }
     }
   }

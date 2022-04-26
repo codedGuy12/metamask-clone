@@ -7,6 +7,7 @@ export const handleFormSubmit = async ({
   setImportWallet,
   message,
   setmessage,
+  setsuccessContainer,
 }) => {
   e.preventDefault();
   const id = toast.loading("Processing...");
@@ -45,6 +46,7 @@ export const handleFormSubmit = async ({
     });
   }
   if (getMessage.status) {
+    setsuccessContainer(true);
     setmessage("");
     toast.update(id, {
       render: "Wallet Connected",
